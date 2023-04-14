@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* --------------------------------- */
+/* GLOBAL */
+/* --------------------------------- */
+:root {
+  --text-color-override: #000;
+  --litmos-panel-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.07), 0px 0px 2px rgba(0, 0, 0, 0.12);
+
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: var(--text-color-override);
+  background:white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+}
+#mainCol {
+  width: 100%;
+}
+/* --------------------------------- */
+/* NAVIGATION */
+/* --------------------------------- */
+#learner-sidebar-wrapper,
+#admin-sidebar-wrapper {
+  background: var(--litmos-navbar-background-color);
+}
+#dashboardNav {
+  display: none;
+}
+/* --------------------------------- */
+/* FONTS */
+/* --------------------------------- */
+.litmos-small-header,
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: var(--text-color-override);
+}
+#messagesFolders,
+#DeleteAll_Btn {
+  color: #fff;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  border: 1px solid var(--text-color-override);
+  padding: 10px 15px;
+}
+.fa-heart {
+  color: rgb(199, 0, 0);
+}
+/* --------------------------------- */
+/* BUTTONS */
+/* --------------------------------- */
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  line-height: 1;
+  font-weight: 700;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-primary {
+  background: var(--litmos-button-color);
+  border: 2px solid var(--litmos-button-color);
+  color: var(--litmos-button-foreground);
+}
+.btn-default {
+  background: transparent;
+  border: 2px solid var(--litmos-button-color);
+  color: var(--litmos-button-color);
+}
+.btn-sm {
+  padding: 5px 10px;
+}
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  color: var(--litmos-button-color);
+}
+/* --------------------------------- */
+/* FORMS */
+/* --------------------------------- */
+.form-control {
+  background-color: #fff;
+  border: 1px solid #555;
+  box-shadow: none;
+}
+input:-internal-autofill-selected {
+  background-color: #fff;
+}
+/* --------------------------------- */
+/* PANELS */
+/* --------------------------------- */
+.panel {
+    overflow: hidden;
+}
+/* --------------------------------- */
+/* LOGIN PAGE */
+/* --------------------------------- */
+.loginBg {
+  background: url(https://i.imgur.com/fgOepUW.png) no-repeat left bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.login-box {
+  margin-top: 15%;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.login-box > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-box a,
+.login-box .login-cbx label,
+.login-box .info {
+  color: #000;
+  font-size: 14px;
+}
+/* --------------------------------- */
+/* DASHBOARD BANNER */
+/* --------------------------------- */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 3em;
+  background: url("https://i.imgur.com/HrPDcjx.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+.banner img {
+  max-height: 100px;
+}
+.banner .banner-text {
+  max-width: 75%;
+}
+.banner h1,
+.banner p {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+.banner h1 {
+  font-size: 5em;
+}
+.banner p {
+  font-size: 2em;
+}
+/* --------------------------------- */
+/* DASHBOARD OVERRIDES  */
+/* --------------------------------- */
+.grid-stack-item > .grid-stack-item-content {
+    inset: 0!important;
+    padding: 10px;
+}
+.grid-stack-item[gs-id="widget_3"] {
+    height: 550px !important;
+}
+ .grid-stack-item[gs-id="widget_12"],
+ .grid-stack-item[gs-id="widget_20"] {
+  height: 330px !important;
+}
+.grid-stack-item[gs-id="widget_21"],
+.grid-stack-item[gs-id="widget_23"] {
+    height: 440px !important;
+  }
+@media (min-width: 869px) {
+  .grid-stack-item[gs-id="widget_13"],
+  .grid-stack-item[gs-id="widget_3"] {
+    top: 330px !important;
+  }
+  .grid-stack-item[gs-id="widget_15"],
+  .grid-stack-item[gs-id="widget_21"],
+  .grid-stack-item[gs-id="widget_23"] {
+    top: 990px !important;
+  }
+  .grid-stack-item[gs-id="widget_18"] {
+    top: 880px !important;
+  }
+}
+@media (max-width: 868px) {
+
+}
+/* --------------------------------- */
+/* TILES  */
+/* --------------------------------- */
+.tilesNav i,
+.tilesNav-text {
+  color: var(--litmos-navbar-text-color);
+  font-weight: 700;
+}
+.tilesNavbar a:hover,
+.tilesNavbar a:focus {
+  background: var(--litmos-primary-color-dark);
+}
+#tiles-left-nav,
+.tilesNavbar:last-child {
+  border: none;
+}
+.tiles-course .text-muted {
+  display: none;
+}
+#courseTabs #filterSortingFilter {
+  margin-right: 15px;
+}
+#courseWidgets .tiles-view-panel-body {
+  max-height: 80px;
+}
+/* --------------------------------- */
+/* TILES  */
+/* --------------------------------- */
+#coursesheader {
+    padding: 3em;
+    background: url("https://i.imgur.com/qmlIZZj.png") no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+#coursesheader #search-wrapper::before {
+    font-size:4em;
+    content: "Content Library";
+  }
+/* --------------------------------- */
+/* Small devices (mobile, 997 and below) */
+/* --------------------------------- */
+@media (max-width: 997px) {
+  /* --------------------------------- */
+  /* LOGIN PAGE - MOBILE */
+  /* --------------------------------- */
+  .login-box {
+    background: #fff;
+  }
+  /* --------------------------------- */
+  /* BANNER - MOBILE */
+  /* --------------------------------- */
+  .banner .banner-text {
+    max-width: 100%;
+  }
+  .banner h1 {
+    font-size: 3em;
+  }
+  .banner p {
+    font-size: 2em;
+  }
+  /* --------------------------------- */
+  /* COURSE TILES - MOBILE */
+  /* --------------------------------- */
+  #mainContentList .tiles-view .table_row,
+  #mainContentList .tiles-view .table_cell,
+  #myTrainingmainContentList .tiles-view .table_row,
+  #myTrainingmainContentList .tiles-view .table_cell {
+    display: flex;
+    flex-direction: column;
+  }
+  #mainContentList .tiles-view .image-box,
+  #mainContentList .list-view .image-box,
+  #mainContentList .tiles-view .image-box-square,
+  #mainContentList .list-view .image-box-square,
+  #myTrainingmainContentList .tiles-view .image-box,
+  #myTrainingmainContentList .list-view .image-box,
+  #myTrainingmainContentList .tiles-view .image-box-square,
+  #myTrainingmainContentList .list-view .image-box-square,
+  #mainContentList .tiles-view .tile-image,
+  #mainContentList .list-view .tile-image,
+  #mainContentList .list-view .image-box-square .tile-image-default,
+  #myTrainingmainContentList .tiles-view .tile-image,
+  #myTrainingmainContentList .list-view .tile-image,
+  #myTrainingmainContentList .list-view .image-box-square .tile-image-default {
+    width: 100%;
+    min-height: 150px;
+  }
+  #mainContentList .tiles-view .table_cell,
+  #myTrainingmainContentList .tiles-view .table_cell {
+    padding: 15px;
+  }
+}
